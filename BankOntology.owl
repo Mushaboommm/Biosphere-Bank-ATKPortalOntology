@@ -1,0 +1,1629 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY ontology "http://www.larflast.bas.bg/ontology#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.larflast.bas.bg/ontology#"
+     xml:base="http://www.larflast.bas.bg/ontology"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl2="http://www.w3.org/2006/12/owl2#"
+     xmlns:ontology="http://www.larflast.bas.bg/ontology#">
+    <owl:Ontology rdf:about=""/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <!-- http://www.larflast.bas.bg/ontology#agency_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#agency_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#bond"/>
+        <owl:disjointWith rdf:resource="http://www.larflast.bas.bg/ontology#corporate_bond"/>
+        <owl:disjointWith rdf:resource="http://www.larflast.bas.bg/ontology#government_bond"/>
+        <owl:disjointWith rdf:resource="http://www.larflast.bas.bg/ontology#municipal_bond"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >disjointwith perspective is kind of issuing authority</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#agent -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#agent">
+        <!-- <rdfs:subClassOf rdf:resource="&owl;Thing"/> -->
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#agricultural_future_contract -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#agricultural_future_contract">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#futures_contract"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#american_standard_option -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#american_standard_option">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#option_contract"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#asked_price -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#asked_price">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#price"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#asset -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#asset">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#capital"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#asset_backed_security -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#asset_backed_security">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#bank -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#bank">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#bankers_acceptance -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#bankers_acceptance">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#financial_instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#bear -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#bear">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#dealer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#bearer_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#bearer_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#coupon_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#bid_price -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#bid_price">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#price"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#block_sale -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#block_sale">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#transaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#blue_chip_stock -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#blue_chip_stock">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#stock"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#debt_instrument"/>
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#security"/>
+        <owl:disjointWith rdf:resource="http://www.larflast.bas.bg/ontology#hybrid_security"/>
+        <owl:disjointWith rdf:resource="http://www.larflast.bas.bg/ontology#stock"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >disjointwith perspective is status of security holder: creditor or/and owner</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#bond_anticipation_note -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#bond_anticipation_note">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#municipal_note"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#bond_market -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#bond_market">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#financial_market"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#bondholder -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#bondholder">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#holder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#borrower -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#borrower">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#demander"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#broker -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#broker">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#financial_agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#brokerage_firm -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#brokerage_firm">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#bull -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#bull">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#dealer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#bulldog_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#bulldog_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#corporate_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#buyer -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#buyer">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#supplier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#call_option -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#call_option">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#option_contract"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#callable_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#callable_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#capital -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#capital">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#finacial_mean"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#capital_market -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#capital_market">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#financial_market"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#card -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#card">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#financial_instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#cash -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#cash">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#money"/>
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#payment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#certificate -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#certificate">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#financial_instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#certificate_of_deposit -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#certificate_of_deposit">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#certificate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#check_card -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#check_card">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#card"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#closed_end_mortgage_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#closed_end_mortgage_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#mortgage_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#commercial_paper -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#commercial_paper">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#financial_instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#commission_broker -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#commission_broker">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#floor_broker"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#commodity_futures_trading_commission -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#commodity_futures_trading_commission">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#common_stock -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#common_stock">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#stock"/>
+        <owl:disjointWith rdf:resource="http://www.larflast.bas.bg/ontology#preferred_stock"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >disjointwith perspective is kind of voting rights and kind of dividents</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#company -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#company">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#compound_interest_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#compound_interest_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#contract -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#contract">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#financial_instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#contract_agent -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#contract_agent">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#contract_buyer -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#contract_buyer">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#contract_agent"/>
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#demander"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#contract_seller -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#contract_seller">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#contract_agent"/>
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#supplier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#convertible_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#convertible_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#corporate_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#corporate_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#bond"/>
+        <owl:disjointWith rdf:resource="http://www.larflast.bas.bg/ontology#government_bond"/>
+        <owl:disjointWith rdf:resource="http://www.larflast.bas.bg/ontology#municipal_bond"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >disjointwith perspective is kind of issuing authority</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#corporation -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#corporation">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#cost -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#cost">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#value"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#coupon_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#coupon_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#cover_bear -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#cover_bear">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#bear"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#credit -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#credit">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#asset"/>
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#payment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#credit_card -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#credit_card">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#card"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#cummulative_preferred_stock -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#cummulative_preferred_stock">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#preferred_stock"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#currency -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#currency">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#money"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#cyclical_stock -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#cyclical_stock">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#stock"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#day_order -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#day_order">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#order"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#dealer -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#dealer">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#financial_agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#debenture -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#debenture">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#unsecured_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#debit_card -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#debit_card">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#card"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#debt_instrument -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#debt_instrument">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#financial_instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#defensive_stock -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#defensive_stock">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#stock"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#demander -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#demander">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#market_agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#derivative_market -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#derivative_market">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#financial_market"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#discount_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#discount_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#double_barreled_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#double_barreled_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#municipal_bond"/>
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#tax_exempt_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#equipment_trust_certificate -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#equipment_trust_certificate">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#senior_bond"/>
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#serial_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#equity_instrument -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#equity_instrument">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#financial_instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#european_standard_option -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#european_standard_option">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#option_contract"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#eurobond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#eurobond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#government_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#federal_agency_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#federal_agency_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#agency_bond"/>
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#government_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#fill_or_kill -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#fill_or_kill">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#order"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#finacial_mean -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#finacial_mean">
+        <!-- <rdfs:subClassOf rdf:resource="&owl;Thing"/> -->
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#financial_agent -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#financial_agent">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#financial_asset -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#financial_asset">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#financial_instrument -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#financial_instrument">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#financial_asset"/>
+        <!-- <rdfs:subClassOf rdf:resource="&owl;Thing"/> -->
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#financial_market -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#financial_market">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#market"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#financial_operation -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#financial_operation">
+        <!-- <rdfs:subClassOf rdf:resource="&owl;Thing"/> -->
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#fixed_interest_security -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#fixed_interest_security">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#security"/>
+        <owl:disjointWith rdf:resource="http://www.larflast.bas.bg/ontology#floating_rate_security"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >disjointwith perspective is kind of interest</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#floating_rate_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#floating_rate_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#bond"/>
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#floating_rate_security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#floating_rate_security -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#floating_rate_security">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#security"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >disjointwith perspective is kind of interest</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#floor_broker -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#floor_broker">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#broker"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#forward_market -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#forward_market">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#derivative_market"/>
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#self_regulatory_organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#foward_contract -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#foward_contract">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#contract"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#futures_contract -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#futures_contract">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#contract"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#futures_market -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#futures_market">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#derivative_market"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#general_obligation_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#general_obligation_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#municipal_bond"/>
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#tax_exempt_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#gilt -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#gilt">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#government_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#gilt_edged_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#gilt_edged_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#corporate_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#government -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#government">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#government_agency -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#government_agency">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#government_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#government_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#bond"/>
+        <owl:disjointWith rdf:resource="http://www.larflast.bas.bg/ontology#municipal_bond"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >disjointwith perspective is kind of issuing authority</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#growth_stock -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#growth_stock">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#stock"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#holder -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#holder">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#supplier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#housing_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#housing_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#municipal_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#hybrid_security -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#hybrid_security">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#security"/>
+        <owl:disjointWith rdf:resource="http://www.larflast.bas.bg/ontology#stock"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >disjointwith perspective is status of security holder: creditor or/and owner</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#income_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#income_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#income_stock -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#income_stock">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#stock"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#independent_broker -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#independent_broker">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#floor_broker"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#index_option -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#index_option">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#option_contract"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#industrial_revenue_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#industrial_revenue_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#revenue_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#insured_municipal_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#insured_municipal_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#municipal_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#investment_bank -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#investment_bank">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#bank"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#investment_banker -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#investment_banker">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#dealer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#investor -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#investor">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#supplier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#junk_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#junk_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#corporate_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#lender -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#lender">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#supplier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#liability -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#liability">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#capital"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#limit_order -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#limit_order">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#order"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#limited_and_special_tax_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#limited_and_special_tax_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#municipal_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#listed_stock -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#listed_stock">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#stock"/>
+        <owl:disjointWith rdf:resource="http://www.larflast.bas.bg/ontology#unlisted_stock"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >disjointwith perspective is company registration on the stock exchange</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#loan -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#loan">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#debt_instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#local_government -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#local_government">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#municipal_government"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#market -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#market">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#market_agent -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#market_agent">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#market_order -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#market_order">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#order"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#metallurgical_futures_contract -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#metallurgical_futures_contract">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#futures_contract"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#money -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#money">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#financial_instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#money_market -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#money_market">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#financial_market"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#moral_obligation_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#moral_obligation_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#municipal_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#mortgage_backed_security -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#mortgage_backed_security">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#mortgage_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#mortgage_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#senior_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#multiplier_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#multiplier_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#municipal_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#municipal_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#bond"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >disjointwith perspective is kind of issuing authority</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#municipal_government -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#municipal_government">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#government"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#municipal_note -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#municipal_note">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#municipal_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#national_government -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#national_government">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#government"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#negotiable_certificate_of_deposit -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#negotiable_certificate_of_deposit">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#certificate_of_deposit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#negotiated_market -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#negotiated_market">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#financial_market"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#non_callable_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#non_callable_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#non_cummulative_preferred_stock -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#non_cummulative_preferred_stock">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#preferred_stock"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#non_tax_exempt_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#non_tax_exempt_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#open_end_mortgage_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#open_end_mortgage_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#mortgage_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#open_market -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#open_market">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#financial_market"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#option_clearing_corporation -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#option_clearing_corporation">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#option_contract -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#option_contract">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#contract"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#options_market -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#options_market">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#derivative_market"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#order -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#order">
+        <!-- <rdfs:subClassOf rdf:resource="&owl;Thing"/> -->
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#organization -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#organization">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#financial_agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#over_the_counter_market -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#over_the_counter_market">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#secondary_market"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#partially_registered_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#partially_registered_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#coupon_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#payment -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#payment">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#cost"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#penny_stock -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#penny_stock">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#stock"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#preferred_stock -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#preferred_stock">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#stock"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >disjointwith perspective is kind of voting rights and kind of dividents</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#price -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#price">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#cost"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#primary_market -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#primary_market">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#financial_market"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#property -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#property">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#real_asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#put_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#put_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#put_option -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#put_option">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#option_contract"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#quality -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#quality">
+        <!-- <rdfs:subClassOf rdf:resource="&owl;Thing"/> -->
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#real_asset -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#real_asset">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#registered_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#registered_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#revenue_anticipation_note -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#revenue_anticipation_note">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#municipal_note"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#revenue_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#revenue_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#municipal_bond"/>
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#tax_exempt_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#samurai bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#samurai_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#corporate_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#savings_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#savings_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#government_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#secondary_market -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#secondary_market">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#financial_market"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#secured_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#secured_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#corporate_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#security -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#security">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#financial_instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#security_and_exchange_comission -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#security_and_exchange_comission">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#self_regulatory_organization -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#self_regulatory_organization">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#seller -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#seller">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#demander"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#senior_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#senior_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#serial_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#serial_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#specialist -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#specialist">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#broker"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#speculative_stock -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#speculative_stock">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#stock"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#spot_market -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#spot_market">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#financial_market"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#state_government -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#state_government">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#municipal_government"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#stock -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#stock">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#equity_instrument"/>
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#security"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >disjointwith perspective is status of security holder: creditor and owner</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#stock_exchange -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#stock_exchange">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#secondary_market"/>
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#stock_market"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#stock_market -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#stock_market">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#financial_market"/>
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#self_regulatory_organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#stock_option -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#stock_option">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#option_contract"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#stockholder -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#stockholder">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#holder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#stop_loss -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#stop_loss">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#order"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#subordinated_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#subordinated_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#supplier -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#supplier">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#market_agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#tax_anticipation_note -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#tax_anticipation_note">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#municipal_note"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#tax_exempt_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#tax_exempt_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#transaction -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#transaction">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#financial_operation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#u.s. treasuries -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#U.S._treasuries">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#government_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#u.s. treasury_bill -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#U.S._treasury_bill">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#U.S._treasuries"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#u.s. treasury_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#U.S._treasury_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#U.S._treasuries"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#U.S. treasury_note -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#U.S._treasury_note">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#U.S._treasuries"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#underwriter -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#underwriter">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#dealer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#unlisted_stock -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#unlisted_stock">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#stock"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >disjointwith perspective is company registration on the stock exchange</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#unsecured_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#unsecured_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#corporate_bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#usa_federal_reserve -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#usa_federal_reserve">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#value -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#value">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#quality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#zero_coupon_bond -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#zero_coupon_bond">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#bond"/>
+    </owl:Class>
+    
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <!-- 
+    <owl:Class rdf:about="&owl;Thing"/>
+    -->
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#AMEX -->
+
+    <stock_exchange rdf:about="http://www.larflast.bas.bg/ontology#AMEX"/>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#NASDAQ -->
+
+    <over_the_counter_market rdf:about="http://www.larflast.bas.bg/ontology#NASDAQ"/>
+    
+
+
+    <!-- http://www.larflast.bas.bg/ontology#NYSE -->
+
+    <stock_exchange rdf:about="http://www.larflast.bas.bg/ontology#NYSE">
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >New York Stock Exchange</rdfs:comment>
+    </stock_exchange>
+</rdf:RDF>

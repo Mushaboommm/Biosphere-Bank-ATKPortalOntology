@@ -1,0 +1,672 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://sweet.jpl.nasa.gov/ontology/biosphere.owl#"
+     xml:base="http://sweet.jpl.nasa.gov/ontology/biosphere.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl2="http://www.w3.org/2006/12/owl2#">
+    <owl:Ontology rdf:about="">
+        <owl:versionInfo>1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Algae -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Algae">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Amoebae -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Amoebae">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#MicrobiotaTaxonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Amphibian -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Amphibian">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Anemone -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Anemone">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Animal -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Animal">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#LivingThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Arachnid -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Arachnid">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Arthropod -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Arthropod">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Bacteria -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Bacteria">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#MicrobiotaTaxonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Bird -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Bird">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#BlueGreenAlgae -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#BlueGreenAlgae">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#MicrobiotaTaxonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Canopy -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Canopy">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Vegetation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Centipede -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Centipede">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Chlorophyll -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Chlorophyll">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Microbiota"/>
+    </owl:Class>
+    
+    
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Conifer -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Conifer">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Coral -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Coral">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Crop -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Crop">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Crown -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Crown">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Vegetation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Crustacean -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Crustacean">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Dairy -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Dairy">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#DeciduousVegetation -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#DeciduousVegetation">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Vegetation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Diatom -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Diatom">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#MicrobiotaTaxonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#DominantSpecies -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#DominantSpecies">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Vegetation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Echinoderm -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Echinoderm">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#EvergreenVegetation -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#EvergreenVegetation">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Vegetation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#ExoticSpecies -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#ExoticSpecies">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#ExoticVegetation -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#ExoticVegetation">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Vegetation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Fern -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Fern">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Fish -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Fish">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#MarineAnimal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Flagellate -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Flagellate">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#MicrobiotaTaxonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Flatworm -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Flatworm">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#FloweringPlant -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#FloweringPlant">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Fungi -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Fungi">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#FungiTaxonomy -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#FungiTaxonomy">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Fungi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Human -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Human">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Mammal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#IndigenousSpecies -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#IndigenousSpecies">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#IndigenousVegetation -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#IndigenousVegetation">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Vegetation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Insect -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Insect">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Invertebrate -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Invertebrate">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Jellyfish -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Jellyfish">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#MarineAnimal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Leaf -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Leaf">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Lichen -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Lichen">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Litter -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Litter">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Vegetation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Liverwort -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Liverwort">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Livestock -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Livestock">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#LivingThing -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#LivingThing"/>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Macroalgae -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Macroalgae">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Mammal -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Mammal">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#MarineAnimal -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#MarineAnimal"/>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#MarineBird -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#MarineBird">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#MarineAnimal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#MarineInvertebrate -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#MarineInvertebrate">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#MarineAnimal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#MarineMammal -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#MarineMammal">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#MarineAnimal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#MarineMicrobiota -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#MarineMicrobiota">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#MarinePlant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#MarinePlant -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#MarinePlant">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Microalgae -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Microalgae">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#MicrobiotaTaxonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Microbiota -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Microbiota">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#MicrobiotaTaxonomy -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#MicrobiotaTaxonomy">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Microbiota"/>
+    </owl:Class>
+    
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Millipede -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Millipede">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Mold -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Mold">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#FungiTaxonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Mollusk -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Mollusk">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Moss -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Moss">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Mushroom -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Mushroom">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#FungiTaxonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Nutrient -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Nutrient">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Vegetation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Phytoplankton -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Phytoplankton">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#MicrobiotaTaxonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Plankton -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Plankton">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#MicrobiotaTaxonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Plant -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Plant">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#LivingThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Pollen -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Pollen">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Vegetation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Poultry -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Poultry">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Protist -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Protist">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#MicrobiotaTaxonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Reptile -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Reptile">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Roundworm -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Roundworm">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#SegmentedWorm -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#SegmentedWorm">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#SlimeMold -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#SlimeMold">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#FungiTaxonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Sponge -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Sponge">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#TreeRing -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#TreeRing">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Vegetation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Vegetation -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Vegetation">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#VegetationCover -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#VegetationCover">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Vegetation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#VegetationSpecies -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#VegetationSpecies">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Vegetation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Vertebrate -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Vertebrate">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Yeast -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Yeast">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#FungiTaxonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Zooplankton -->
+
+    <owl:Class rdf:about="http://www.larflast.bas.bg/ontology#Zooplankton">
+        <rdfs:subClassOf rdf:resource="http://www.larflast.bas.bg/ontology#Animal"/>
+    </owl:Class>
+</rdf:RDF>
